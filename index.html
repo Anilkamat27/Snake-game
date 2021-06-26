@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake Game</title>
+    <style>
+      body {
+        margin: 0px;
+        background-color: black;
+      }
+      #canvas {
+        padding: none;
+        margin: 0px;
+        background-image: url("Base2.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+
+        border: 25px Solid rgb(5, 90, 5);
+      }
+      #spanForButton {
+        background-color: #e4e016;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+      #button{
+          background-color: #e4e016;
+          border: none;
+          font-size: 30px;
+          color: rgb(75, 5, 5);
+          font-weight: 700;
+          
+      }
+    p,span{
+      padding: 10px;
+        color: aliceblue;
+        font-size: 30px;
+    }
+    .id{
+       float: left;
+        }
+        #er{
+          padding: 50px;
+          background-color: black;
+        }
+    </style>
+  </head>
+  <body>
+    <canvas id="canvas"></canvas>
+    <script src="GameScript.js"></script>
+    <br>
+    
+    <div class="id"><p>Score : <span id="ScorePrinter"></spanp></p></div>
+     <div class="id"><span id="er"></span></div>
+   <div class="id" paddding="10px"><span id="spanForButton"><input type="button" id="button" value="PLAY AGAIN" onclick='f4()'/></span>
+  </div>
+  </body>
+</html>
